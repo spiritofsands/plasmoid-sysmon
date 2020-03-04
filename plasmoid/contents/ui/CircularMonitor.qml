@@ -53,7 +53,7 @@ Item {
         readonly property double filler: 0.01
 
         width: parent.width
-        height: parent.height
+        height: parent.height - label.height * 0.5
         antialiasing: true
 
         onPaint: {
@@ -97,13 +97,13 @@ Item {
     // the label if requested
     PlasmaComponents.Label {
         id: label
-        width: parent.width - (Math.min(canvas.height, canvas.width) / 2.03 - Math.min(canvas.height, canvas.width) / 3.5) * 2
+        width: parent.width
         horizontalAlignment: Text.AlignHCenter
         elide: Text.ElideRight
 
         // tells the label to be centered in parent (in the centre of CircularMonitor)
         anchors {
-            verticalCenter: parent.verticalCenter
+            top: parent.verticalCenter
             horizontalCenter: parent.horizontalCenter
         }
 

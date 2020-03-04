@@ -8,7 +8,7 @@ show any metric provided by the System Monitor data source engine.
 
 It can look like that:
 
-![How it looks](https://raw.githubusercontent.com/burlog/plasmoid-sysmon/master/img/sysmon.png)
+![How it looks](https://raw.githubusercontent.com/spiritofsands/plasmoid-sysmon/master/img/sysmon.png)
 
 It is written completely in QML declarative language.
 
